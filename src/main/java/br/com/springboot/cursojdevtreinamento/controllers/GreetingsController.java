@@ -1,4 +1,4 @@
-package br.com.springboot.cursojdevtrainamento.controllers.cursojdevtrainamento;
+package br.com.springboot.cursojdevtreinamento.controllers;
 
 
 import org.springframework.boot.SpringApplication;
@@ -10,10 +10,17 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 public class GreetingsController {
 
-   @RequestMapping(value="/{name}",method = RequestMethod.GET)
+   @RequestMapping(value="/mostrarnome/{name}",method = RequestMethod.GET)
     @ResponseStatus(HttpStatus.OK)
     public String greetingText(@PathVariable String name){
        return "Hello " + name + "!";
+
+   }
+
+   @RequestMapping(value="/olamundo/{nome}",method = RequestMethod.GET)
+    @ResponseStatus(HttpStatus.OK)
+    public String greetingText2(@PathVariable String nome){
+       return "Ola mundo de " + nome + "!";
 
    }
         

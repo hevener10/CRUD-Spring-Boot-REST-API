@@ -1,4 +1,4 @@
-package br.com.springboot.cursojdevtrainamento;
+package br.com.springboot.cursojdevtreinamento;
 
 
 import org.springframework.boot.SpringApplication;
